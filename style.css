@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(64, 0, 57);
+    color: white;
+    font-family: sans-serif;
+    line-height: 2;
+    height: 100dvh;
+    background-image: linear-gradient(rgb(158, 0, 140 ) 10%, rgb(64, 0, 57) 100%,rgb(158, 0, 140) 20%);
+}
+
+header , footer {
+    text-align: center;
+}
+
+header > h1 {
+    font-family: "Oooh Baby", cursive;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 42, 78);
+}
+
+.oooh-baby-regular {
+  font-family: "Oooh Baby", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
