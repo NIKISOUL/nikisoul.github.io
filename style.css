@@ -3,25 +3,40 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     background-color: rgb(64, 0, 57);
     color: white;
     font-family: sans-serif;
     line-height: 2;
-    height: 100dvh;
-    background-image: linear-gradient(rgb(158, 0, 140 ) 10%, rgb(64, 0, 57) 100%,rgb(158, 0, 140) 20%);
+    min-height: 100dvh;
+    background-image: linear-gradient(rgb(158, 0, 140) 0%, rgb(64, 0, 57) 50%, rgb(158, 0, 140) 100%);
 }
 
-header , footer {
+header,
+footer {
     text-align: center;
+    line-height: 1.5;
+
 }
 
-header > h1 {
+header>h1 {
     font-family: "Oooh Baby", cursive;
     font-weight: 800;
     font-style: normal;
     text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
     font-size: 40px;
+}
+
+h2 {
+    text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
+    font-family: "Alegreya SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
 }
 
 main {
@@ -31,11 +46,47 @@ main {
 
 a {
     text-decoration: none;
-    color: rgb(255, 42, 78);
+    color: rgb(255, 95, 122);
+}
+
+hr {
+    border: solid 3px white;
+}
+
+footer {
+    line-height: 2;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .oooh-baby-regular {
-  font-family: "Oooh Baby", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Oooh Baby", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 10px
+    }
+}
+
+.flexy {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexy>* {
+    max-width: 45%;
+}
+
+.actionButton {
+    border: solid 3px pink;
+    border-radius: 30px;
+    background-color: rgb(239, 198, 255);
+    background-image: radial-gradient(rgb(102, 0, 120), rgb(102, 0, 120), rgba(144, 81, 195, 0.957));
+    padding: 10px;
+    width: max-content;
+    margin: auto;
 }
